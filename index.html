@@ -17,34 +17,6 @@
     <title>Ecuador!</title>
   </head>
   <body>
-    <style>
-        .imagenes{
-              height:500px;
-              width: 100%;
-        }
-        .imagenes2{
-            height: 300px;
-            width: 100%;
-        }
-        .contenedor2{
-            width: 100%;
-        }
-        .imagen-galeria{
-        width: 100%;
-        height: 100px;
-        }
-        .animaciones{
-          transition: 0.5s;
-        }
-        .animaciones:hover{
-          transform: scale(2);
-          border-radius: 50%;
-        }
-        .card{
-          cursor: pointer;
-          transition: transform 0.3s ease;
-        }
-    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#">VidaUna</a>
@@ -72,156 +44,231 @@
           </div>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/slider1.jpg" class="d-block w-100 imagenes" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>SOY EL TRIPIIII-ERNA</h5>
-              <p>EL mas querido del mundo del Ecuador.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider2.jpg" class="d-block w-100 imagenes" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tengo Hambre</h5>
-              <p>Todos somos unos solos viva la patria.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider3.jpg" class="d-block w-100 imagenes" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Viva la Ecuadorrrrrrr</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!--SITIOS TURISTICOS DE ECUADOR -->
-       <div class="container  w-50">
-        <h1 class="text-center">SITIOS TURISTICOS</h1>
-        <div class="card mb-3 bg-danger ">
-            <img src="img/cotopaxi.jpg" class="card-img-top imagenes2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center"><strong>COTOPAXI</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              <button class="btn-primary" id="abrirDialogo">Más información</button>
-          
-            </div>
-          </div>
-          <div class="card mb-3 bg-danger">
-            <img src="img/quilotoa.jpg"  class="card-img-top imagenes2" alt="...">
-    
-            <div class="card-body">
-              <h5 class="card-title text-center"><strong>QUILOTOA</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              <button class="btn-primary" id="abrirDialogo1">Más información</button>
-            </div>
-          </div>
-          <div class="card mb-3 bg-danger">
-            <img src="img/baños.jpg" class="card-img-top imagenes2" alt="...">
-    
-            <div class="card-body">
-              <h5 class="card-title text-center"><strong>BAÑOS</strong></h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              <button class="btn-primary" id="abrirDialogo2">Más información</button>
-            </div>
-          </div>
-            <!--GALERIA -->
-            <div class="container">
-              <h1 class="text-center">GALERIA</h1>
-              <div class="row g-2">
-                  <div class="col-lg-3 col-md-3 col-sm-12">
-                      <img src="img/l1.jpg" class=" imagen-galeria img-fluid d-block animaciones" alt="" srcset="">
-          
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                      <img src="img/l2.jpg" class="imagen-galeria img-fluid d-block animaciones" alt="" srcset="">
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12">
-                      <img src="img/l3.jpg" class="imagen-galeria img-fluid d-block animaciones"alt="" srcset="">
-                  </div>
+    <section id="Richard">
+      <div class="container ">
+          <h1 class="text-center">MEDICAMENTOS</h1>
+          <div class="row">
+              <div class="col-md-4 col-sm-12 card shadow bg-info">
+                  <h2 class="text-center">Ingresar Medicamentos</h2>
+                  <form action="" onsubmit="return crearRegistro()">
+                      <label for="" class="form-label">Nombre:</label><br>
+                      <input type="text"  id="nombre" class="form-control" required>
+                      <label for="" class="form-label">Descripción:</label>
+                      <textarea name=""  cols="30" rows="5" class="form-control" id="descripcion"  maxlength="200"></textarea>
+                      <label for="" class="form-label">Precio:</label><br>
+                      <input type="number" name="" id="precio" class="form-control" step="0.01" min="0" required><br>
+                      <label for=""class="form-label">Fabricante:</label>
+                      <input type="text"class="form-control" id="fabricante" pattern="[A-Za-z\s]+" title="Solo letras" required>
+                      <label for="" class="form-label">Stock:</label>
+                      <input type="number"  id="stock" class="form-control" min="0" required>
+                      <button type="submit" class="btn btn-primary mt-4 mb-4">Enviar </button>
+                  </form>
+
               </div>
-              <div class="row g-2">
-                  <div class="col-lg-6">
-                      <img src="img/l4.jpg" class="imagen-galeria animaciones alt="" srcset="">
+              <div class="col-md-8 col-sm-12">
+                  <div class="container mt-3 table-responsive">
+                      <table class="table table-bordered border-dark">
+                          <thead class="table-dark">
+                              <tr>
+                                  <th>Nombre</th>
+                                  <th>Descripción</th>
+                                  <th>Precio</th>
+                                  <th>Fabricante</th>
+                                  <th>Stock</th>
+                                  <th
+                                  >Acciones</th>
+                              </tr>
+                          </thead>
+                          <tbody class="align-middle" id="dataContainer"></tbody>
+                      </table>
                   </div>
-                  <div class="col-lg-3">
-                      <img src="img/l5.jpg"  class="imagen-galeria animaciones" alt="" srcset="">
-                  </div>
-                  <div class="col-lg-3">
-                      <img src="img/l6.jpg" class="imagen-galeria animaciones" alt="" srcset="">
-                  </div>
-          
+
               </div>
-            </div>
-
-  
-        </div>
-        <div id="miDialogo" title="Ecuador">
-          <p>     El Cotopaxi se encuentra en el Parque Nacional Cotopaxi, aproximadamente a 50 kilómetros al sur de Quito, la capital de Ecuador.
-            Es parte de la cordillera de los Andes y es uno de los volcanes más altos y activos del país.</p>
+          </div>
       </div>
-    
-
-
-        <div class="container-fluid">
-          <footer
-              class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark ">
-              <p class="col-md-4 mb-0 text-muted">&copy; 2021 Ecuador, Inc</p>
-  
-              <a href="/"
-                  class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32">
-                      <use xlink:href="#bootstrap" />
-                  </svg>
-              </a>
-  
-              <ul class="nav col-md-4 justify-content-end">
-                  <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                  <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a></li>
-                  <li class="nav-item"><a href="ubicacion.html" class="nav-link px-2 text-muted">Ubicacion</a></li>
-                  <li class="nav-item"><a href="servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
-                  <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contactos</a></li>
-              </ul>
-          </footer>
-      </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </section>
  
-    <script>
-       $(document).ready(function() {
-            $("#abrirDialogo").on("click", function() {
-                $("#miDialogo").dialog();
-            });
-        });
-        $(document).ready(function() {
-            $("#abrirDialogo1").on("click", function() {
-                $("#miDialogo").dialog();
-            });
-        });
-        $(document).ready(function() {
-            $("#abrirDialogo2").on("click", function() {
-                $("#miDialogo").dialog();
-            });
-        });
-  </script>
+  <!-- Modal de actualización -->
+<!-- Modal para actualizar -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title" id="updateModalLabel">Actualizar Medicamento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido del formulario de actualización -->
+        <form id="updateForm">
+          <div class="mb-3">
+            <label for="updateNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="updateNombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="updateDescripcion" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="updateDescripcion" required>
+          </div>
+          <div class="mb-3">
+            <label for="updatePrecio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="updatePrecio" required>
+          </div>
+          <div class="mb-3">
+            <label for="updateFabricante" class="form-label">Fabricante</label>
+            <input type="text" class="form-control" id="updateFabricante" required>
+          </div>
+          <div class="mb-3">
+            <label for="updateStock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="updateStock" required>
+            <input type="hidden" id="updateKey">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="guardarActualizacion()">Actualizar</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Botón que activa el modal -->
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import { getDatabase,ref,push, onValue, remove,update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"; //paquete para el real-timeDatabase;        // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration;
+      const firebaseConfig = {
+          apiKey: "AIzaSyBMJsVpnbOwVOiVNbTZScZdet9qlGigDL0",
+          authDomain: "conexion-8ec0d.firebaseapp.com",
+          databaseURL: "https://conexion-8ec0d-default-rtdb.firebaseio.com",
+          projectId: "conexion-8ec0d",
+          storageBucket: "conexion-8ec0d.appspot.com",
+          messagingSenderId: "679910299749",
+          appId: "1:679910299749:web:9800b464879628b4850e8c"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database= getDatabase(app);//Establecer conexion con mi base de datos
+      //Inicializando variables
+
+      const updateForm = document.getElementById('updateForm');
+      const updateNombre = document.getElementById('updateNombre');
+      const updateDescripcion = document.getElementById('updateDescripcion');
+      const updatePrecio = document.getElementById('updatePrecio');
+      const updateFabricante = document.getElementById('updateFabricante');
+      const updateStock = document.getElementById('updateStock');
+      const updateKeyInput = document.getElementById('updateKey');
+
+window.crearRegistro = function () {
+  const nombre=document.getElementById("nombre").value;
+  const descripcion=document.getElementById("descripcion").value;
+  const precio=document.getElementById("precio").value;
+  const fabricante=document.getElementById("fabricante").value;
+  const stock=document.getElementById("stock").value;
+  push(
+      ref(database, 'richardMartinez'),
+      {
+          nombre: nombre,
+          descripcion: descripcion,
+          precio: precio,
+          fabricante:fabricante,
+          stock:stock
+      }
+  );
+
+  alert('Datos ingresados');
+
+}
+
+window.eliminarRegistro = function (registroKey) {
+  const confirmacion = window.confirm('¿Estás seguro de que deseas eliminar este registro?');
+  if (!confirmacion) {  
+      return;
+  }
+  const registroRef = ref(database, 'richardMartinez/' + registroKey);
+  // Eliminar el registro
+  remove(registroRef);
+
+  
+}
+window.prepararActualizacion = function (registroKey, nombre, descripcion, precio, fabricante, stock) {
+  updateNombre.value = nombre;
+  updateDescripcion.value = descripcion;
+  updatePrecio.value = precio;
+  updateFabricante.value = fabricante;
+  updateStock.value = stock;
+  updateKeyInput.value = registroKey;
+  console.log(registroKey)
+}
+
+window.guardarActualizacion = function () {
+  const nuevoNombre = updateNombre.value;
+  const nuevoDescripcion = updateDescripcion.value;
+  const nuevoPrecio = updatePrecio.value;
+  const nuevoFabricante = updateFabricante.value;
+  const nuevoStock = updateStock.value;
+  const key = updateKeyInput.value;
+  const registroRef = ref(database, 'richardMartinez/' + key);
+
+  console.log('Referencia de registro:', registroRef);
+
+  // Actualizar el registro
+  update(registroRef, {
+      nombre: nuevoNombre,
+      descripcion: nuevoDescripcion,
+      precio: nuevoPrecio,
+      fabricante: nuevoFabricante,
+      stock: nuevoStock
+  }).then(() => {
+      alert('Registro actualizado');
+      updateForm.reset(); // Limpiar el formulario después de la actualizació
+
+  }).catch((error) => {
+      console.error('Error al actualizar el registro:', error);
+      alert('Error al actualizar el registro');
+  });
+}
+
+const septimoRef = ref(database, 'richardMartinez');
+onValue(septimoRef, (snapshot) => {
+  const data = snapshot.val();
+
+  // Limpiar la tabla antes de actualizarla
+  const tableBody = document.getElementById('dataContainer');
+  tableBody.innerHTML = '';
+
+  // Recorrer los datos y agregar filas a la tabla
+  for (const key in data) {
+      const registro = data[key];
+      const newRow = `
+          <tr>
+              <td>${registro.nombre}</td>
+              <td>${registro.descripcion}</td>
+              <td>${registro.precio}</td>
+              <td>${registro.fabricante}</td>
+              <td>${registro.stock}</td>
+              <td>
+                  <button  title="Eliminar Registro" class="btn btn-outline-danger" onclick="eliminarRegistro('${key}')" ><i class="bi bi-trash3">Eliminar</i></button>
+                  <button  title="Actualizar Registro" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#updateModal" onclick="prepararActualizacion('${key}', '${registro.nombre}', '${registro.descripcion}','${registro.precio}','${registro.fabricante}','${registro.stock}')"><i class="bi bi-pencil-square"></i>Actualizar</button>
+
+              </td>
+          </tr>`;
+      tableBody.innerHTML += newRow;
+  }
+});
+
+
+
+    </script>
     
     
   </body>
